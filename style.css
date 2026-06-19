@@ -1,61 +1,74 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
 body{
 background:#111;
+font-family:Arial, sans-serif;
+margin:0;
+padding:0;
 color:white;
-text-align:center;
 }
 
-header{
+.topo{
+text-align:center;
+padding:40px 20px;
+background:#000;
+}
+
+.topo h1{
+color:#d4af37;
+}
+
+.voltar{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#ff8800;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+.categoria{
 padding:40px 20px;
 }
 
-.logo{
-width:140px;
-height:140px;
-border-radius:50%;
+.categoria h2{
+color:#ffb300;
+text-align:center;
+margin-bottom:30px;
+}
+
+.produtos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.produto{
+background:#1d1d1d;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+.produto img{
+width:100%;
+height:220px;
 object-fit:cover;
-border:4px solid #ffb000;
 }
 
-h1{
-margin-top:15px;
-font-size:32px;
+.produto h3{
+padding:15px;
+color:#d4af37;
 }
 
-header p{
+.descricao{
+padding:0 15px;
 color:#ccc;
 }
 
-main{
-width:90%;
-max-width:500px;
-margin:auto;
-}
-
-.botao{
+.preco{
 display:block;
-background:#ffb000;
-color:black;
-text-decoration:none;
-padding:18px;
-margin:15px 0;
-border-radius:12px;
+padding:15px;
+font-size:22px;
 font-weight:bold;
-transition:0.3s;
-}
-
-.botao:hover{
-transform:scale(1.05);
-}
-
-footer{
-margin-top:50px;
-padding:20px;
-color:#999;
+color:#ff8800;
 }
