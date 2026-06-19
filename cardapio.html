@@ -4,98 +4,135 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Cardápio Digital - NAVENIDA</title>
+<title>Cardápio NAVENIDA</title>
 
 <link rel="stylesheet" href="style.css">
+
+<style>
+
+.categoria{
+margin:40px auto;
+max-width:1200px;
+}
+
+.categoria h2{
+color:#ffb000;
+margin-bottom:20px;
+}
+
+.grid-produtos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.produto{
+background:#222;
+border-radius:12px;
+padding:10px;
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.produto img{
+width:80px;
+height:80px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.info{
+text-align:left;
+}
+
+.info h3{
+font-size:15px;
+margin-bottom:5px;
+}
+
+.preco{
+color:#ffb000;
+font-weight:bold;
+font-size:18px;
+}
+
+</style>
 
 </head>
 
 <body>
 
-<header class="topo">
+<header>
 
 <h1>🍻 Cardápio Digital</h1>
 
-<p>NAVENIDA Choperia</p>
-
-<a href="index.html" class="voltar">
-⬅ Voltar ao Início
-</a>
+<p>NAVENIDA</p>
 
 </header>
-
-<!-- CHOPES -->
-
-<section class="categoria">
-
-<h2>🍺 Chopes</h2>
-
-<div class="produtos">
-    
-<div class="produto">
-
-<img src="imagens/gin-tropical.jpg">
-
-<h3>Gin Tropical</h3>
-
-<p class="descricao">
-Gin, energético tropical e frutas.
-</p>
-
-<span class="preco">R$ 22,00</span>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- DRINKS -->
-
-<section class="categoria">
-
-<h2>🍹 Drinks</h2>
-
-<div class="produtos">
-
-<div class="produto">
-
-<img src="imagens/drink.jpg" alt="Drink">
-
-<h3>Nome do Drink</h3>
-
-<p class="descricao">
-Descrição do drink.
-</p>
-
-<span class="preco">R$ 0,00</span>
-
-</div>
-
-</div>
-
-</section>
 
 <!-- PORÇÕES -->
 
 <section class="categoria">
 
-<h2>🍟 Porções</h2>
+<h2>🍟 PORÇÕES</h2>
 
-<div class="produtos">
+<div class="grid-produtos">
 
 <div class="produto">
+<img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?w=300">
+<div class="info">
+<h3>Batata Frita</h3>
+<div class="preco">R$ 28,00</div>
+</div>
+</div>
 
-<img src="imagens/porcao.jpg" alt="Porção">
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1518013431117-eb1465fa5752?w=300">
+<div class="info">
+<h3>Batata com Mussarela e Bacon</h3>
+<div class="preco">R$ 38,00</div>
+</div>
+</div>
 
-<h3>Nome da Porção</h3>
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=300">
+<div class="info">
+<h3>Batata Cheddar Bacon e Mussarela</h3>
+<div class="preco">R$ 42,00</div>
+</div>
+</div>
 
-<p class="descricao">
-Descrição da porção.
-</p>
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=300">
+<div class="info">
+<h3>Frango com Fritas</h3>
+<div class="preco">R$ 58,00</div>
+</div>
+</div>
 
-<span class="preco">R$ 0,00</span>
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=300">
+<div class="info">
+<h3>Frango</h3>
+<div class="preco">R$ 45,00</div>
+</div>
+</div>
 
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
+<div class="info">
+<h3>Disco de Costela</h3>
+<div class="preco">R$ 79,00</div>
+</div>
+</div>
+
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=300">
+<div class="info">
+<h3>Bolinha de Queijo</h3>
+<div class="preco">R$ 35,00</div>
+</div>
 </div>
 
 </div>
@@ -106,53 +143,47 @@ Descrição da porção.
 
 <section class="categoria">
 
-<h2>🥩 Espetos</h2>
+<h2>🥩 ESPETOS</h2>
 
-<div class="produtos">
+<div class="grid-produtos">
 
 <div class="produto">
+<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300">
+<div class="info">
+<h3>Alcatra</h3>
+<div class="preco">R$ 12,00</div>
+</div>
+</div>
 
-<img src="imagens/espeto.jpg" alt="Espeto">
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300">
+<div class="info">
+<h3>Queijo Coalho</h3>
+<div class="preco">R$ 10,00</div>
+</div>
+</div>
 
-<h3>Espeto de Carne</h3>
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1529692236671-f1dc06ab5d1d?w=300">
+<div class="info">
+<h3>Medalhão de Frango</h3>
+<div class="preco">R$ 14,00</div>
+</div>
+</div>
 
-<p class="descricao">
-Descrição do espeto.
-</p>
-
-<span class="preco">R$ 0,00</span>
-
+<div class="produto">
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
+<div class="info">
+<h3>Linguiça</h3>
+<div class="preco">R$ 10,00</div>
+</div>
 </div>
 
 </div>
 
 </section>
 
-<!-- SOBREMESAS -->
-
-<section class="categoria">
-
-<h2>🍰 Sobremesas</h2>
-
-<div class="produtos">
-
-<div class="produto">
-
-<img src="imagens/sobremesa.jpg" alt="Sobremesa">
-
-<h3>Nome da Sobremesa</h3>
-
-<p class="descricao">
-Descrição da sobremesa.
-</p>
-
-<span class="preco">R$ 0,00</span>
-
-</div>
-
-</div>
-
-</section>
+<a href="index.html" class="botao">⬅ Voltar</a>
 
 </body>
 </html>
