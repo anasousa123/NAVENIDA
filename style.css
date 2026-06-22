@@ -6,9 +6,12 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#111;
-color:white;
-text-align:center;
+background:linear-gradient(
+180deg,
+#000000,
+#111111,
+#1a1a1a
+);
 }
 
 header{
@@ -58,4 +61,23 @@ footer{
 margin-top:50px;
 padding:20px;
 color:#999;
+}
+
+.menu-categorias{
+position:sticky;
+top:10px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+margin:20px;
+}
+
+.menu-categorias a{
+background:#ffb000;
+color:black;
+padding:10px 15px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
 }
