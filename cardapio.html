@@ -17,27 +17,45 @@ max-width:1200px;
 
 .categoria h2{
 color:#ffb000;
-margin-bottom:20px;
+text-align:center;
+font-size:28px;
+font-weight:700;
+margin-bottom:25px;
+letter-spacing:2px;
 }
 
 .grid-produtos{
 display:grid;
-grid-template-columns:repeat(2, minmax(280px, 1fr));
+grid-template-columns:repeat(3, 1fr);
 gap:12px;
 }
 
-.produto{
-background:#222;
-border-radius:12px;
-padding:8px;
-display:flex;
-align-items:center;
-gap:10px;
+@media(max-width:768px){
+
+.grid-produtos{
+grid-template-columns:1fr;
 }
 
+}
+.produto{
+    background:#222;
+    border-radius:10px;
+    padding:6px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    min-height:80px;
+    transition:0.3s;
+}
+
+.produto:hover{
+    transform:translateY(-3px);
+}
 .produto img{
-width:70px;
-height:70px;
+width:60px;
+height:60px;
+object-fit:cover;
+border-radius:8px;
 }
 
 
@@ -47,11 +65,16 @@ text-align:left;
 
 
 .info h3{
-font-size:13px;
+font-size:14px;
+font-weight:600;
+color:#fff;
+margin-bottom:4px;
 }
 
 .preco{
-font-size:14px;
+color:#ffb000;
+font-weight:700;
+font-size:15px;
 }
 
 .preco{
@@ -69,7 +92,7 @@ font-size:18px;
 <body>
 
 <header>
-    <div class="menu-categorias">
+    <div class="menu-categorias"></div>
 
 <a href="#porcoes">🍟 Porções</a>
 
@@ -93,7 +116,7 @@ font-size:18px;
 
 <!-- PORÇÕES -->
 
-<section class="categoria">
+<section class="categoria" id="porcoes">
 
 <h2>🍟 PORÇÕES</h2>
 
@@ -161,7 +184,7 @@ font-size:18px;
 
 <!-- ESPETOS -->
 
-<section class="categoria">
+<section class="categoria" id="espetos">
 
 <h2>🥩 ESPETOS</h2>
 
@@ -217,7 +240,7 @@ font-size:18px;
 
 <!-- Bebias -->
 
-<section class="categoria">
+<section class="categoria" id="bebidas">
 
 <h2>🥩 ESPETOS</h2>
 
@@ -276,6 +299,8 @@ font-size:18px;
 </section>
 
 <a href="index.html" class="botao">⬅ Voltar</a>
+</main>
 
+</div>
 </body>
 </html>
