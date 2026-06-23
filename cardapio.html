@@ -1,1033 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Cardápio NAVENIDA</title>
-
-<link rel="stylesheet" href="style.css">
-
-<style>
-
-.categoria{
-margin:40px auto;
-max-width:1200px;
-}
-
-.categoria h2{
-color:#ffb000;
-text-align:center;
-font-size:28px;
-font-weight:700;
-margin-bottom:25px;
-letter-spacing:2px;
-}
-
-.grid-produtos{
-display:grid;
-grid-template-columns:repeat(3, 1fr);
-gap:12px;
-}
-
-@media(max-width:768px){
-
-.grid-produtos{
-grid-template-columns:1fr;
-}
-
-}
-.produto{
-    background:#222;
-    border-radius:10px;
-    padding:6px;
-    display:flex;
-    align-items:center;
-    gap:8px;
-    min-height:80px;
-    transition:0.3s;
-}
-
-.produto:hover{
-    transform:translateY(-3px);
-}
-.produto img{
-width:60px;
-height:60px;
-object-fit:cover;
-border-radius:8px;
-}
-
-
-.info{
-text-align:left;
-}
-
-
-.info h3{
-font-size:14px;
-font-weight:600;
-color:#fff;
-margin-bottom:4px;
-}
-
-.preco{
-color:#ffb000;
-font-weight:bold;
-font-size:18px;
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio NAVENIDA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
-<body>
 <body>
 
-<div class="topo-info">
-
-<div class="item-topo">
-🕒 Aberto hoje até 23:00
-</div>
-
-<div class="item-topo">
-📞 (34) 99999-9999
-</div>
-
-<div class="item-topo">
-📍 Patos de Minas - MG
-</div>
-
-</div>
-
-<div class="container">
-
-<aside class="sidebar">
-
-<img src="imagens/logo.png" class="logo-lateral">
-
-<nav>
-
-<a href="#porcoes">🍟 Porções</a>
-
-<a href="#espetos">🥩 Espetos</a>
-
-<a href="#bebidas">🍺 Cervejas 600ml</a>
-
-<a href="#longneck">🍻 Long Neck</a>
-
-<a href="#copao">🥤 Copão</a>
-
-<a href="#naoalcoolicas">🥤 Não Alcoólicas</a>
-
-<a href="index.html">🏠 Início</a>
-
-</nav>
-
-</aside>
-
-<main class="conteudo">
-
-<header>
-
-<h1>🍻 Cardápio Digital</h1>
-
-<p>NAVENIDA</p>
-
-</header>
-
-<!-- PORÇÕES -->
-
-<section class="categoria" id="porcoes">
-
-<h2>🍟 PORÇÕES</h2>
-
-<div class="grid-produtos">
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?w=300">
-<div class="info">
-<h3>Batata Frita 500g</h3>
-<div class="preco">R$ 25,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1518013431117-eb1465fa5752?w=300">
-<div class="info">
-<h3>Batata com Mussarela , Bacon e Cheddar 500g</h3>
-<div class="preco">R$ 35,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=300">
-<div class="info">
-<h3>Frango a passarinho 500g</h3>
-<div class="preco">R$ 35,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=300">
-<div class="info">
-<h3>Frango a passarinho 800g</h3>
-<div class="preco">R$ 45,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=300">
-<div class="info">
-<h3>Frango e fritas</h3>
-<div class="preco">R$ 55,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Porção mista</h3>
-<div class="preco">R$ 85,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=300">
-<div class="info">
-<h3>Bolinha de Queijo</h3>
-<div class="preco">R$ 35,00</div>
-</div>
-</div>
-
-</div>
-
-</section>
-
-<!-- ESPETOS -->
-
-<section class="categoria" id="espetos">
-
-<h2>🥩 ESPETOS</h2>
-
-<div class="grid-produtos">
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300">
-<div class="info">
-<h3>Alcatra</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300">
-<div class="info">
-<h3>Queijo </h3>
-<div class="preco">R$ 8,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1529692236671-f1dc06ab5d1d?w=300">
-<div class="info">
-<h3>Medalhão de Frango</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Linguiça</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Pão de Alho</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Tulipa</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Coração</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Completo</h3>
-<div class="preco">R$ 14,00</div>
-</div>
-
-</div>
-
-</section> 
-
-<!-- Bebidas 600ml-->
-
-<section class="categoria" id="bebidas">
-
-<h2>🥩 Bebidas</h2>
-
-<div class="grid-produtos">
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300">
-<div class="info">
-<h3>Bhama </h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300">
-<div class="info">
-<h3>Antartica </h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1529692236671-f1dc06ab5d1d?w=300">
-<div class="info">
-<h3>Original </h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Heiniken </h3>
-<div class="preco">R$ 13,00</div>
-</div>
-</div>
-
-</div>
-
-</section>
-
-<!-- COPÃO -->
-
-<section class="categoria" id="copao">
-
-<h2>🥩 Copão 700ml</h2>
-
-<div class="grid-produtos">
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300">
-<div class="info">
-<h3>Copão de Vodka</h3>
-<div class="preco">R$ 15,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300">
-<div class="info">
-<h3>Copão Gin </h3>
-<div class="preco">R$ 16,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1529692236671-f1dc06ab5d1d?w=300">
-<div class="info">
-<h3>Copão Red label </h3>
-<div class="preco">R$ 20,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Copão White horse </h3>
-<div class="preco">R$ 25,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Copão Campari loco </h3>
-<div class="preco">R$ 25,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Copão Tadala </h3>
-<div class="preco">R$25,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Copão Jack daniels </h3>
-<div class="preco">R$35,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Copão Old par </h3>
-<div class="preco">R$40,00</div>
-</div>
-</div>
-</div>
-
-</section> 
-
-<h2>🥩 Bebidas não alcolica</h2>
-
-<div class="grid-produtos">
-
-<section class="categoria" id="naoalcoolicas">
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300">
-<div class="info">
-<h3>Refrigerante lata</h3>
-<div class="preco">R$ 4,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300">
-<div class="info">
-<h3>Energetico lata </h3>
-<div class="preco">R$ 12,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1529692236671-f1dc06ab5d1d?w=300">
-<div class="info">
-<h3>Energetico litro</h3>
-<div class="preco">R$ 16,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Agua com gas</h3>
-<div class="preco">R$ 3,50</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Agua sem gas</h3>
-<div class="preco">R$ 2,50</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Coca 600ml</h3>
-<div class="preco">R$ 8,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Coca 1L</h3>
-<div class="preco">R$ 9,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Coca 2L</h3>
-<div class="preco">R$ 12,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Copo com gelo e limão</h3>
-<div class="preco">R$ 4,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Kapo</h3>
-<div class="preco">R$ 3,50</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Suco lata</h3>
-<div class="preco">R$ 6,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Suco litro</h3>
-<div class="preco">R$ 12,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Agua de coco</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Gatorade</h3>
-<div class="preco">R$ 8,00</div>
-</div>
-</div>
-
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>H20</h3>
-<div class="preco">R$ 6,00</div>
-</div>
-</div>
-
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Power ade</h3>
-<div class="preco">R$ 7,00</div>
-</div>
-</div>
-
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Del valle garrafinha</h3>
-<div class="preco">R$ 4,50</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Schweppes</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Del valle garrafinha</h3>
-<div class="preco">R$ 4,50</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Mineiro</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Fanta</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Pepsi</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300">
-<div class="info">
-<h3>Corona sem alcool</h3>
-<div class="preco">R$ 9,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300">
-<div class="info">
-<h3>Heineken sem alcool</h3>
-<div class="preco">R$ 8,00</div>
-</div>
-</div>
-</div>
-
-</section> 
-
-
-<div class="produto-expandivel">
-
-<button class="titulo-produto">
-🍺 Long Neck
-<span>A partir de R$ 6,00</span>
-</button>
-
-<div class="opcoes">
-
-<div class="opcao">
-<span>Heineken 250ml</span>
-<b>R$ 6,50</b>
-</div>
-
-<div class="opcao">
-<span>Corona 330ml</span>
-<b>R$ 9,00</b>
-</div>
-
-<div class="opcao">
-<span>Skol Beats</span>
-<b>R$ 9,00</b>
-</div>
-
-</div>
-
-</div>
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Corona 330ml</h3>
-<div class="preco">R$ 9,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Amstel ultra 275ml</h3>
-<div class="preco">R$ 7,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Amstel ultra 275ml</h3>
-<div class="preco">R$ 7,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Amstel ultra 275ml</h3>
-<div class="preco">R$ 7,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Amstel ultra 275ml</h3>
-<div class="preco">R$ 7,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Amstel ultra 275ml</h3>
-<div class="preco">R$ 7,00</div>
-</div>
-</div>
-
-<h2>🥩 Bebidas</h2>
-
-<div class="grid-produtos">
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300">
-<div class="info">
-<h3>Bhama 660ml</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300">
-<div class="info">
-<h3>Antartica 600ml </h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1529692236671-f1dc06ab5d1d?w=300">
-<div class="info">
-<h3>Original 600ml</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Heiniken 600ml</h3>
-<div class="preco">R$ 13,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Coca lata</h3>
-<div class="preco">R$ 4,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Fanta lata</h3>
-<div class="preco">R$ 4,00</div>
-</div>
-</div>
-
-<h2>🥩 Bebidas</h2>
-
-<div class="grid-produtos">
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300">
-<div class="info">
-<h3>Bhama 660ml</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300">
-<div class="info">
-<h3>Antartica 600ml </h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1529692236671-f1dc06ab5d1d?w=300">
-<div class="info">
-<h3>Original 600ml</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Heiniken 600ml</h3>
-<div class="preco">R$ 13,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Coca lata</h3>
-<div class="preco">R$ 4,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Fanta lata</h3>
-<div class="preco">R$ 4,00</div>
-</div>
-</div>
-
-<h2>🥩 Bebidas</h2>
-
-<div class="grid-produtos">
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300">
-<div class="info">
-<h3>Bhama 660ml</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300">
-<div class="info">
-<h3>Antartica 600ml </h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1529692236671-f1dc06ab5d1d?w=300">
-<div class="info">
-<h3>Original 600ml</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Heiniken 600ml</h3>
-<div class="preco">R$ 13,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Coca lata</h3>
-<div class="preco">R$ 4,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Fanta lata</h3>
-<div class="preco">R$ 4,00</div>
-</div>
-</div>
-
-<h2>🥩 Bebidas</h2>
-
-<div class="grid-produtos">
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300">
-<div class="info">
-<h3>Bhama 660ml</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300">
-<div class="info">
-<h3>Antartica 600ml </h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1529692236671-f1dc06ab5d1d?w=300">
-<div class="info">
-<h3>Original 600ml</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Heiniken 600ml</h3>
-<div class="preco">R$ 13,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Coca lata</h3>
-<div class="preco">R$ 4,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Fanta lata</h3>
-<div class="preco">R$ 4,00</div>
-</div>
-</div>
-
-<h2>🥩 Bebidas</h2>
-
-<div class="grid-produtos">
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300">
-<div class="info">
-<h3>Bhama 660ml</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300">
-<div class="info">
-<h3>Antartica 600ml </h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1529692236671-f1dc06ab5d1d?w=300">
-<div class="info">
-<h3>Original 600ml</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Heiniken 600ml</h3>
-<div class="preco">R$ 13,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Coca lata</h3>
-<div class="preco">R$ 4,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Fanta lata</h3>
-<div class="preco">R$ 4,00</div>
-</div>
-</div>
-
-<h2>🥩 Bebidas</h2>
-
-<div class="grid-produtos">
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300">
-<div class="info">
-<h3>Bhama 660ml</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300">
-<div class="info">
-<h3>Antartica 600ml </h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1529692236671-f1dc06ab5d1d?w=300">
-<div class="info">
-<h3>Original 600ml</h3>
-<div class="preco">R$ 10,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Heiniken 600ml</h3>
-<div class="preco">R$ 13,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Coca lata</h3>
-<div class="preco">R$ 4,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Fanta lata</h3>
-<div class="preco">R$ 4,00</div>
-</div>
-</div> 
-
-
-</div>
-
-</section>
-
-<a href="index.html" class="botao">⬅ Voltar</a>
-<footer class="rodape">
-
-<h3>NAVENIDA 🍻</h3>
-
-<p>📍 Patos de Minas - MG</p>
-
-<p>📞 (34) 99999-9999</p>
-
-<p>📸 Instagram: @navenida</p>
-
-<p>© 2026 NAVENIDA</p>
-
-</footer>
-
-</main>
-
-</div>
-<script>
-
-const produtos =
-document.querySelectorAll(".titulo-produto");
-
-produtos.forEach(produto => {
-
-produto.addEventListener("click", () => {
-
-produto.parentElement.classList.toggle("ativo");
-
-});
-
-});
-
-</script>
+    <div class="topo-info">
+        <div class="item-topo">🕒 Aberto hoje até 23:00</div>
+        <div class="item-topo">📞 (34) 99999-9999</div>
+        <div class="item-topo">📍 Patos de Minas - MG</div>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <img src="imagens/logo.png" class="logo-lateral">
+            <nav>
+                <a href="#porcoes">🍟 Porções</a>
+                <a href="#espetos">🥩 Espetos</a>
+                <a href="#bebidas">🍺 Cervejas 600ml</a>
+                <a href="#copao">🥤 Copão 700ml</a>
+                <a href="#naoalcoolicas">🥤 Não Alcoólicas</a>
+                <a href="index.html" style="background-color: #ffb000; color: #000;">🏠 Início</a>
+            </nav>
+        </aside>
+
+        <main class="conteudo">
+            <header style="margin-bottom: 30px;">
+                <h1 style="color: #ffb000; font-size: 32px;">🍻 Cardápio Digital</h1>
+                <p style="color: #888;">Navenida Sabores</p>
+            </header>
+
+            <section class="categoria" id="porcoes">
+                <h2>🍟 PORÇÕES</h2>
+                <div class="grid-produtos">
+                    <div class="produto">
+                        <img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?w=300">
+                        <div class="info">
+                            <h3>Batata Frita 500g</h3>
+                            <div class="preco">R$ 25,00</div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <img src="https://images.unsplash.com/photo-1518013431117-eb1465fa5752?w=300">
+                        <div class="info">
+                            <h3>Batata com Mussarela, Bacon e Cheddar</h3>
+                            <div class="preco">R$ 35,00</div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=300">
+                        <div class="info">
+                            <h3>Frango a passarinho 500g</h3>
+                            <div class="preco">R$ 35,00</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="categoria" id="espetos">
+                <h2>🥩 ESPETOS</h2>
+                <div class="grid-produtos">
+                    <div class="produto">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300">
+                        <div class="info">
+                            <h3>Alcatra</h3>
+                            <div class="preco">R$ 10,00</div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300">
+                        <div class="info">
+                            <h3>Queijo Coalho</h3>
+                            <div class="preco">R$ 8,00</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="categoria" id="bebidas">
+                <h2>🍺 CERVEJAS 600ml</h2>
+                <div class="grid-produtos">
+                    <div class="produto">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300">
+                        <div class="info">
+                            <h3>Original 600ml</h3>
+                            <div class="preco">R$ 10,00</div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
+                        <div class="info">
+                            <h3>Heineken 600ml</h3>
+                            <div class="preco">R$ 13,00</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <a href="index.html" class="btn-voltar">⬅ Voltar para o início</a>
+
+            <footer>
+                <p>© 2026 NAVENIDA • Patos de Minas - MG</p>
+            </footer>
+        </main>
+    </div>
 
 </body>
 </html>
