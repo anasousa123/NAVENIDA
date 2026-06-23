@@ -602,82 +602,33 @@ font-size:18px;
 </section> 
 
 
-<h2>🥩 Bebidas Long neck</h2>
+<div class="produto-expandivel">
 
-<div class="grid-produtos">
+<button class="titulo-produto">
+🍺 Long Neck
+<span>A partir de R$ 6,00</span>
+</button>
 
-<section class="categoria" id="longneck">
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300">
-<div class="info">
-<h3>51 ice</h3>
-<div class="preco">R$ 8,00</div>
-</div>
-</div>
+<div class="opcoes">
 
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300">
-<div class="info">
-<h3>Heineken 250ml </h3>
-<div class="preco">R$ 6,50</div>
-</div>
+<div class="opcao">
+<span>Heineken 250ml</span>
+<b>R$ 6,50</b>
 </div>
 
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1529692236671-f1dc06ab5d1d?w=300">
-<div class="info">
-<h3>Heineken 330ml</h3>
-<div class="preco">R$ 8,00</div>
-</div>
+<div class="opcao">
+<span>Corona 330ml</span>
+<b>R$ 9,00</b>
 </div>
 
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Coronita 210ml</h3>
-<div class="preco">R$ 7,00</div>
-</div>
+<div class="opcao">
+<span>Skol Beats</span>
+<b>R$ 9,00</b>
 </div>
 
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Imperio gold 210ml</h3>
-<div class="preco">R$ 6,00</div>
-</div>
 </div>
 
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Amstel ultra 275ml</h3>
-<div class="preco">R$ 7,00</div>
 </div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Imperio ultra 275ml</h3>
-<div class="preco">R$ 7,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Imperio lager</h3>
-<div class="preco">R$ 7,00</div>
-</div>
-</div>
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
-<div class="info">
-<h3>Skol beats</h3>
-<div class="preco">R$ 9,00</div>
-</div>
-</div>
-
 <div class="produto">
 <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300">
 <div class="info">
@@ -1061,6 +1012,22 @@ font-size:18px;
 </main>
 
 </div>
+<script>
+
+const produtos =
+document.querySelectorAll(".titulo-produto");
+
+produtos.forEach(produto => {
+
+produto.addEventListener("click", () => {
+
+produto.parentElement.classList.toggle("ativo");
+
+});
+
+});
+
+</script>
 
 </body>
 </html>

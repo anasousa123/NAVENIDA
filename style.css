@@ -268,3 +268,52 @@ grid-template-columns:1fr;
 }
 
 }
+
+.produto-expandivel{
+background:#222;
+border-radius:12px;
+margin-bottom:15px;
+overflow:hidden;
+}
+
+.titulo-produto{
+width:100%;
+background:#222;
+border:none;
+padding:18px;
+cursor:pointer;
+color:white;
+font-size:16px;
+font-weight:bold;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.titulo-produto span{
+color:#ffb000;
+font-size:14px;
+}
+
+.opcoes{
+max-height:0;
+overflow:hidden;
+transition:.4s;
+background:#181818;
+}
+
+.produto-expandivel.ativo .opcoes{
+max-height:500px;
+}
+
+.opcao{
+display:flex;
+justify-content:space-between;
+padding:12px 18px;
+border-top:1px solid #333;
+color:#ddd;
+}
+
+.opcao b{
+color:#ffb000;
+}
