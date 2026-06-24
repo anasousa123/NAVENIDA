@@ -1,61 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Boulevard Choperia</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#2b2b2b;
+color:white;
+text-align:center;
+}
+
+.container{
+width:100%;
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+.logo{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+margin-top:30px;
+box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+
+.banner{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:20px;
+margin:25px 0;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+h1{
+color:#c7a64a;
+font-size:42px;
+margin-bottom:10px;
+}
+
+.subtitulo{
+font-size:20px;
+margin-bottom:30px;
+color:#f2f2f2;
+}
+
+.redes{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-bottom:35px;
+}
+
+.redes a{
+font-size:40px;
+color:white;
+transition:0.3s;
+}
+
+.redes a:hover{
+color:#c7a64a;
+}
+
+.botao{
+display:block;
+width:100%;
+background:#000;
+color:white;
+text-decoration:none;
+padding:22px;
+margin:15px 0;
+border:3px solid #c7a64a;
+border-radius:18px;
+font-size:22px;
+font-weight:bold;
+transition:.3s;
+}
+
+.botao:hover{
+background:#c7a64a;
+color:black;
+}
+
+.horario{
+background:#1b1b1b;
+padding:25px;
+border-radius:20px;
+margin-top:40px;
+border:1px solid #c7a64a;
+}
+
+.horario h2{
+color:#c7a64a;
+margin-bottom:15px;
+}
+
+.horario p{
+margin:8px 0;
+font-size:17px;
+}
+
+footer{
+margin-top:40px;
+padding:30px;
+font-size:14px;
+opacity:.8;
+}
+
+@media(max-width:768px){
+
+.logo{
+width:120px;
+height:120px;
+}
+
+.banner{
+height:200px;
+}
+
+h1{
+font-size:32px;
+}
+
+.subtitulo{
+font-size:18px;
+}
+
+.botao{
+font-size:20px;
+padding:18px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
-<header>
+<div class="container">
 
-<img src="imagens/logo.png" class="logo">
+<img src="logo.png" class="logo" alt="Boulevard Choperia">
 
-<h1>Boulevard Choperia</h1>
+<img src="banner.jpg" class="banner" alt="Boulevard Choperia">
 
-<p>Seu Happy Hour Começa Aqui 🍻</p>
+<h1>BOULEVARD CHOPERIA</h1>
 
-</header>
+<p class="subtitulo">
+Seu ponto de encontro para brindar a vida.
+</p>
 
-<main>
+<div class="redes">
 
-<a href="#" class="botao">
-📖 Cardápio
+<a href="https://instagram.com/boulevardchoperia1" target="_blank">
+<i class="fab fa-instagram"></i>
 </a>
 
-<a href="#" class="botao">
-📍 Localização
+<a href="https://wa.me/5534996518016" target="_blank">
+<i class="fab fa-whatsapp"></i>
 </a>
 
-<a href="#" class="botao">
+</div>
+
+<a class="botao" href="cardapio.html">
+📖 Cardápio Digital
+</a>
+
+<a class="botao" href="https://instagram.com/boulevardchoperia1" target="_blank">
 📸 Instagram
 </a>
 
-<a href="#" class="botao">
+<a class="botao" href="https://wa.me/5534996518016" target="_blank">
 💬 WhatsApp
 </a>
 
-<a href="#" class="botao">
-🎵 Música ao Vivo
+<a class="botao"
+href="https://maps.google.com/?q=Av.+Marabá,+4447,+Patos+de+Minas+MG"
+target="_blank">
+📍 Localização
 </a>
 
-</main>
+<a class="botao"
+href="https://wa.me/5534996518016?text=Olá,%20gostaria%20de%20reservar%20uma%20mesa"
+target="_blank">
+📅 Reservar Mesa
+</a>
+
+<a class="botao" href="eventos.html">
+🎉 Eventos
+</a>
+
+<div class="horario">
+
+<h2>🕒 Horário de Funcionamento</h2>
+
+<p>Segunda a Quinta: 17h às 00h</p>
+<p>Sexta: 17h às 02h</p>
+<p>Sábado: 11h às 02h</p>
+<p>Domingo: 11h às 00h</p>
+
+</div>
 
 <footer>
-
-<p>© 2026 Boulevard Choperia</p>
-
+© 2026 Boulevard Choperia - Todos os direitos reservados.
 </footer>
 
-<script src="script.js"></script>
+</div>
 
 </body>
 </html>
