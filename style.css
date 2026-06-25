@@ -120,28 +120,37 @@ header p {
 }
 
 /* Estilo igualzinho aos botões arredondados e elegantes das fotos */
-.btn-linktree {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 18px;
-    background-color: #1c1c1c;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 700;
-    border: 2px solid #ffb000;
-    border-radius: 16px; /* Bem arredondado como na foto */
-    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+.btn-linktree{
+    width: 85%;
+    margin: 0 auto;
+    padding: 16px;
+    background:#000;
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:700;
+
+    border:2px solid #d4af37;
+    border-radius:20px;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.5),
+        inset 0 1px 0 rgba(255,255,255,0.1);
+
+    transition:all .3s ease;
 }
 
-.btn-linktree:hover {
-    background-color: #ffb000;
-    color: #000000;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 22px rgba(255, 176, 0, 0.3);
+.btn-linktree:hover{
+
+    transform:
+        translateY(-6px)
+        scale(1.02);
+
+    box-shadow:
+        0 15px 30px rgba(0,0,0,0.6),
+        0 0 20px rgba(212,175,55,0.4);
+
+    background:#111;
 }
 
 /* ===== CATEGORIAS DO CARDÁPIO ===== */
