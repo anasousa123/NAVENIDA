@@ -373,3 +373,27 @@ iframe {
         gap: 15px;
     }
 }
+.titulo-item{
+width:100%;
+background:#222;
+color:#ffb000;
+padding:15px;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+text-align:left;
+}
+
+.conteudo-item{
+display:none;
+background:#111;
+padding:15px;
+border-radius:0 0 10px 10px;
+}
+
+.conteudo-item p{
+color:white;
+margin:8px 0;
+}
