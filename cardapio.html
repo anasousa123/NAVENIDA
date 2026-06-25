@@ -250,26 +250,99 @@
             </footer>
         </main>
     </div>
-<script>
+    <div id="modal" class="modal">
 
+    <div class="modal-content">
+
+        <span class="fechar" onclick="fecharModal()">
+            ×
+        </span>
+
+        <img id="modal-img">
+
+        <h2 id="modal-titulo"></h2>
+
+        <p id="modal-desc"></p>
+
+        <div id="modal-preco"></div>
+
+    </div>
+
+</div>
+<!-- MODAL -->
 <div id="modal" class="modal">
 
-<div class="modal-content">
+    <div class="modal-content">
 
-<span class="fechar" onclick="fecharModal()">
-×
-</span>
+        <span class="fechar" onclick="fecharModal()">×</span>
 
-<img id="modal-img">
+        <img id="modal-img" src="">
 
-<h2 id="modal-titulo"></h2>
+        <h2 id="modal-titulo"></h2>
 
-<p id="modal-desc"></p>
+        <p id="modal-desc"></p>
 
-<div id="modal-preco"></div>
+        <div id="modal-preco"></div>
 
-</div>
+    </div>
 
 </div>
+
+<script>
+
+function abrirModal(nome,foto,descricao,preco){
+
+    document.getElementById("modal").style.display = "block";
+
+    document.getElementById("modal-titulo").innerHTML = nome;
+
+    document.getElementById("modal-img").src = foto;
+
+    document.getElementById("modal-desc").innerHTML = descricao;
+
+    document.getElementById("modal-preco").innerHTML = preco;
+
+}
+
+function fecharModal(){
+
+    document.getElementById("modal").style.display = "none";
+
+}
+
+window.onclick = function(event){
+
+    let modal = document.getElementById("modal");
+
+    if(event.target == modal){
+
+        modal.style.display = "none";
+
+    }
+
+}
+
+document.querySelectorAll(".titulo-item").forEach(botao => {
+
+    botao.addEventListener("click", () => {
+
+        let conteudo = botao.nextElementSibling;
+
+        if(conteudo.style.display === "block"){
+
+            conteudo.style.display = "none";
+
+        }else{
+
+            conteudo.style.display = "block";
+
+        }
+
+    });
+
+});
+
+</script>
+
 </body>
 </html>
