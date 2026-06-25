@@ -188,20 +188,19 @@
                             <div class="preco">R$ 13,00</div>
                         </div>
                          </div>
-                        <div class="item-cardapio">
+                        <div class="produto" onclick="abrirModal(
+'Cozumel',
+'imagens/cozumel.jpg',
+'Drink refrescante com cerveja e limão',
+'R$ 18,00'
+)">
 
-<button class="titulo-item">
-     <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300">
-🍺 Heineken - A partir de R$ 8,00
-</button>
+<img src="imagens/cozumel.jpg">
 
-<div class="conteudo-item">
-
-<p>250ml - R$ 8,00</p>
-
-<p>330ml - R$ 10,00</p>
-
-<p>600ml - R$ 13,00</p>
+<div class="info">
+<h3>Cozumel</h3>
+<div class="preco">A partir de R$ 18,00</div>
+</div>
 
 </div>
 
@@ -253,24 +252,24 @@
     </div>
 <script>
 
-const botoes = document.querySelectorAll('.titulo-item');
+<div id="modal" class="modal">
 
-botoes.forEach(botao => {
+<div class="modal-content">
 
-botao.addEventListener('click', () => {
+<span class="fechar" onclick="fecharModal()">
+×
+</span>
 
-const conteudo = botao.nextElementSibling;
+<img id="modal-img">
 
-if(conteudo.style.display === 'block'){
-conteudo.style.display = 'none';
-}else{
-conteudo.style.display = 'block';
-}
+<h2 id="modal-titulo"></h2>
 
-});
+<p id="modal-desc"></p>
 
-});
+<div id="modal-preco"></div>
 
-</script>
+</div>
+
+</div>
 </body>
 </html>
