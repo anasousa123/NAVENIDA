@@ -567,3 +567,37 @@ left:0;
 
 }
 
+.titulo-item{
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:#222;
+    border:none;
+    padding:10px;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+.foto-item{
+    width:60px;
+    height:60px;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+.texto-item{
+    text-align:left;
+}
+
+.texto-item h3{
+    color:#fff;
+    font-size:15px;
+    margin:0;
+}
+
+.texto-item span{
+    color:#ffb000;
+    font-weight:bold;
+    font-size:13px;
+}
