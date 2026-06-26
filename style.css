@@ -601,3 +601,33 @@ left:0;
     font-weight:bold;
     font-size:13px;
 }
+
+.produto-expandir{
+    display:flex;
+    flex-direction:column;
+}
+
+.opcoes-produto{
+    display:none;
+    background:#1b1b1b;
+    border-radius:0 0 10px 10px;
+    padding:12px;
+    margin-top:-8px;
+}
+
+.opcoes-produto p{
+    display:flex;
+    justify-content:space-between;
+    color:#fff;
+    padding:8px 0;
+    border-bottom:1px solid #333;
+    font-size:14px;
+}
+
+.opcoes-produto p:last-child{
+    border:none;
+}
+
+.opcoes-produto b{
+    color:#ffb000;
+}

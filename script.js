@@ -49,3 +49,18 @@ document.querySelectorAll('.titulo-item').forEach(botao => {
     });
 
 });
+function abrirItem(card){
+
+    let opcoes = card.nextElementSibling;
+
+    if(opcoes.style.display=="block"){
+
+        opcoes.style.display="none";
+
+    }else{
+
+        opcoes.style.display="block";
+
+    }
+
+}
