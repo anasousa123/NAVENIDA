@@ -409,8 +409,8 @@ iframe {
     
     .topo-info {
         gap: 15px;
-    }
 }
+
 .titulo-item{
 width:100%;
 background:#222;
@@ -486,4 +486,51 @@ right:15px;
 font-size:35px;
 cursor:pointer;
 color:#333;
+}
+/* BOTÃO MENU */
+
+.menu-mobile{
+display:none;
+position:fixed;
+top:15px;
+left:15px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#ffb000;
+color:#000;
+font-size:28px;
+font-weight:bold;
+cursor:pointer;
+z-index:1001;
+box-shadow:0 5px 15px rgba(0,0,0,.4);
+}
+
+/* CELULAR */
+
+@media(max-width:900px){
+
+.menu-mobile{
+display:block;
+}
+
+.sidebar{
+
+position:fixed;
+left:-270px;
+top:0;
+width:250px;
+height:100%;
+transition:.35s;
+z-index:1000;
+
+}
+
+.sidebar.ativo{
+
+left:0;
+
+}
+
 }

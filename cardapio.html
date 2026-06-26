@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button class="menu-mobile" onclick="abrirMenu()">
+☰
+</button>
 
     <div class="topo-info">
         <div class="item-topo">📞 (34) 999121055</div>
@@ -15,7 +18,7 @@
     </div>
 
     <div class="container">
-        <aside class="sidebar">
+       <aside class="sidebar" id="sidebar">
             <img src="imagens/logo.jpeg" class="logo-lateral">
             <nav>
                 <a href="#porcoes">🍟 Porções</a>
@@ -371,5 +374,14 @@ document.querySelectorAll(".titulo-item").forEach(botao => {
 
 </script>
 <script src="script.js"></script>
+<script>
+
+function abrirMenu(){
+
+    document.getElementById("sidebar").classList.toggle("ativo");
+
+}
+
+</script>
 </body>
 </html>
