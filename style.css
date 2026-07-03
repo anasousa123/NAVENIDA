@@ -1,42 +1,50 @@
-/* ===== CONFIGURAÇÕES GERAIS ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    background-color: #121212; /* Fundo grafite escuro super moderno */
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+body{
+    background:#121212;
+    color:#fff;
+    font-family:'Montserrat',sans-serif;
 }
 
-/* ===== TOPO DE INFORMAÇÕES ===== */
-.topo-info {
-    background: #0d0d0d;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    border-bottom: 2px solid #ffb000;
-    flex-wrap: wrap;
+/* ===========================
+   TOPO
+=========================== */
+
+.topo-info{
+    background:#0d0d0d;
+    padding:15px;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    border-bottom:2px solid #ffb000;
 }
 
-.item-topo {
-    font-size: 14px;
-    font-weight: 600;
-    color: #e0e0e0;
+.item-topo{
+    color:#ddd;
+    font-size:14px;
+    font-weight:600;
 }
 
-/* ===== ESTRUTURA PRINCIPAL ===== */
-.container {
-    display: flex;
-    max-width: 1400px;
-    margin: auto;
-    min-height: calc(100vh - 50px);
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+    display:flex;
+    max-width:1400px;
+    margin:auto;
+    min-height:100vh;
 }
 
-/* ===== MENU LATERAL ===== */
 .sidebar{
     width:260px;
     min-width:260px;
@@ -45,136 +53,60 @@ body {
     position:sticky;
     top:0;
     height:100vh;
-    transition:.4s;
-    z-index:1000;
 }
 
-.logo-lateral {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto 30px auto;
-    border: 2px solid #ffb000;
-    box-shadow: 0 4px 15px rgba(255, 176, 0, 0.2);
+.logo-lateral{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:auto;
+    margin-bottom:30px;
+    border:2px solid #ffb000;
 }
 
-.sidebar nav {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
 }
 
-.sidebar a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 18px;
-    border-radius: 12px; /* Cantos arredondados estilo app premium */
-    background: #1f1f1f;
-    transition: .3s ease;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.sidebar a:hover {
-    background: #ffb000;
-    color: black;
-    transform: translateX(5px);
-}
-
-/* ===== CONTEÚDO PRINCIPAL ===== */
-.conteudo {
-    flex: 1;
-    padding: 40px;
-}
-
-/* ===== HEADER DO MEIO ===== */
-header h1 {
-    font-size: 32px;
-    color: #ffb000;
-    margin-bottom: 5px;
-}
-
-header p {
-    color: #a0a0a0;
-    margin-bottom: 30px;
-}
-
-/* ===== PÁGINA INICIAL ESTILO LINKTREE ===== */
-.linktree-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 480px;
-    width: 100%;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.linktree-botoes {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 16px;
-    margin-top: 20px;
-}
-
-/* Estilo igualzinho aos botões arredondados e elegantes das fotos */
-.btn-linktree{
-    width: 85%;
-    margin: 0 auto;
-    padding: 16px;
-    background:#000;
-    color:#fff;
+.sidebar a{
     text-decoration:none;
-    font-size:15px;
-    font-weight:700;
-
-    border:2px solid #d4af37;
-    border-radius:20px;
-
-    box-shadow:
-        0 8px 20px rgba(0,0,0,0.5),
-        inset 0 1px 0 rgba(255,255,255,0.1);
-
-    transition:all .3s ease;
+    color:#fff;
+    background:#1f1f1f;
+    padding:14px;
+    border-radius:12px;
+    transition:.3s;
+    font-weight:600;
 }
 
-.btn-linktree:hover{
-
-    transform:
-        translateY(-6px)
-        scale(1.02);
-
-    box-shadow:
-        0 15px 30px rgba(0,0,0,0.6),
-        0 0 20px rgba(212,175,55,0.4);
-
-    background:#111;
+.sidebar a:hover{
+    background:#ffb000;
+    color:#000;
 }
 
-/* ===== CATEGORIAS DO CARDÁPIO ===== */
-.categoria {
-    margin-bottom: 45px;
+/* ===========================
+   CONTEÚDO
+=========================== */
+
+.conteudo{
+    flex:1;
+    padding:40px;
 }
 
-.categoria h2 {
-    color: #ffb000;
-    margin-bottom: 25px;
-    font-size: 24px;
-    font-weight: 700;
-    border-left: 4px solid #ffb000;
-    padding-left: 12px;
-    text-align: left;
+.categoria{
+    margin-bottom:50px;
 }
 
-/* ===== GRID E CARDS DE PRODUTOS ===== */
-.grid-produtos{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:15px;
+.categoria h2{
+    color:#ffb000;
+    margin-bottom:25px;
+    border-left:5px solid #ffb000;
+    padding-left:12px;
 }
+
 
 .produto{
     background:#222;
@@ -347,9 +279,7 @@ iframe {
 
 /* ===== RESPONSIVIDADE COMPLETA ===== */
 @media(max-width: 1200px) {
-    .grid-produtos {
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    }
+   
 }
 
 @media(max-width: 900px) {
@@ -379,11 +309,7 @@ iframe {
 
 @media(max-width: 600px){
 
-.grid-produtos{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:8px;
-}
+
 
 .produto{
     background:#222;
@@ -418,16 +344,6 @@ iframe {
     
     .topo-info {
         gap: 15px;
-}
-.titulo-item{
-    width:100%;
-    display:flex;
-    align-items:center;
-    gap:15px;
-    background:#222;
-    border:none;
-    padding:10px;
-    cursor:pointer;
 }
 
 .conteudo-item{
@@ -536,10 +452,6 @@ box-shadow:0 5px 15px rgba(0,0,0,.5);
 
 @media(max-width:900px){
 
-.menu-mobile{
-display:block;
-}
-
 .sidebar{
 
 position:fixed;
@@ -573,17 +485,6 @@ left:0;
 
 }
 
-.titulo-item{
-    width:100%;
-    display:flex;
-    align-items:center;
-    gap:12px;
-    background:#222;
-    border:none;
-    padding:10px;
-    border-radius:12px;
-    cursor:pointer;
-}
 
 .foto-item{
     width:70px;
@@ -664,16 +565,44 @@ left:0;
     font-weight:bold;
     margin-top:4px;
 }
-.conteudo-item{
-    display:none;
-    background:#111;
-    padding:15px;
-}
+
 
 .conteudo-item p{
     color:white;
     margin:8px 0;
 }
+
+.item-cardapio{
+    background:#222;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.titulo-item{
+    width:100%;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:0;
+    text-align:left;
+}
+
+.texto-card h3{
+    color:#fff;
+    margin:0;
+    font-size:22px;
+}
+
+.texto-card span{
+    color:#ffb000;
+    font-weight:bold;
+}
+
+.conteudo-item p{
+    color:#fff;
+    margin:10px 0;
+}
+/* ===== CARDÁPIO CATEGORIAS ===== */
 
 .grid-produtos{
     display:grid;
@@ -683,8 +612,9 @@ left:0;
 
 .item-cardapio{
     background:#222;
-    border-radius:12px;
+    border-radius:15px;
     overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.35);
 }
 
 .titulo-item{
@@ -709,22 +639,35 @@ left:0;
 
 .texto-card h3{
     color:#fff;
-    margin:0;
     font-size:22px;
+    margin-bottom:5px;
 }
 
 .texto-card span{
     color:#ffb000;
+    font-size:16px;
     font-weight:bold;
 }
 
 .conteudo-item{
     display:none;
+    background:#181818;
     padding:15px;
-    background:#2d2d2d;
 }
 
 .conteudo-item p{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
     color:#fff;
-    margin:10px 0;
+    padding:10px 0;
+    border-bottom:1px solid #333;
+}
+
+.conteudo-item p:last-child{
+    border-bottom:none;
+}
+
+.conteudo-item b{
+    color:#ffb000;
 }
