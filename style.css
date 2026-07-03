@@ -640,8 +640,8 @@ left:0;
 }
 
 .foto-card{
-    width:65px;
-    height:65px;
+    width:70px;
+    height:70px;
     border-radius:10px;
     object-fit:cover;
     flex-shrink:0;
