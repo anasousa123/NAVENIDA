@@ -405,52 +405,69 @@ font-size:35px;
 cursor:pointer;
 color:#333;
 }
-/* BOTÃO MENU */
+/* =========================
+   BOTÃO MENU
+========================= */
 
 .menu-mobile{
-display:none;
-position:fixed;
-top:15px;
-left:15px;
-width:55px;
-height:55px;
-border:none;
-border-radius:50%;
-background:#ffb000;
-color:#000;
-font-size:28px;
-font-weight:bold;
-cursor:pointer;
-z-index:1001;
-box-shadow:0 5px 15px rgba(0,0,0,.4);
+    display:none;
+    position:fixed;
+    top:15px;
+    left:15px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#ffb000;
+    color:#000;
+    font-size:28px;
+    cursor:pointer;
+    z-index:2000;
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
 }
 
-/* CELULAR */
+/* =========================
+   RESPONSIVO
+========================= */
 
 @media(max-width:900px){
 
-/* MENU MOBILE */
+    .menu-mobile{
+        display:block;
+    }
 
-.menu-mobile{
-display:none;
-position:fixed;
-top:15px;
-left:15px;
-width:55px;
-height:55px;
-border:none;
-border-radius:50%;
-background:#ffb000;
-color:#000;
-font-size:28px;
-cursor:pointer;
-z-index:2000;
-box-shadow:0 5px 15px rgba(0,0,0,.5);
+    .sidebar{
+        position:fixed;
+        left:-280px;
+        top:0;
+        width:260px;
+        height:100%;
+        transition:.4s;
+        z-index:1500;
+    }
+
+    .sidebar.ativo{
+        left:0;
+    }
+
+    .conteudo{
+        width:100%;
+        margin-left:0;
+        padding-top:80px;
+    }
+
+    .foto-item{
+        width:70px;
+        height:70px;
+        object-fit:cover;
+        border-radius:10px;
+    }
+
+    .texto-item{
+        text-align:left;
+    }
+
 }
-
-/* CELULAR */
-
-@media(max-width:900px){
 
 .sidebar{
 
@@ -540,68 +557,6 @@ left:0;
 
 }
 
-.foto-card{
-    width:70px;
-    height:70px;
-    border-radius:10px;
-    object-fit:cover;
-    flex-shrink:0;
-}
-
-.texto-card{
-    display:flex;
-    flex-direction:column;
-}
-
-.texto-card h3{
-    color:#fff;
-    font-size:18px;
-    margin:0;
-}
-
-.texto-card span{
-    color:#ffb000;
-    font-size:15px;
-    font-weight:bold;
-    margin-top:4px;
-}
-
-
-.conteudo-item p{
-    color:white;
-    margin:8px 0;
-}
-
-.item-cardapio{
-    background:#222;
-    border-radius:12px;
-    overflow:hidden;
-}
-
-.titulo-item{
-    width:100%;
-    background:none;
-    border:none;
-    cursor:pointer;
-    padding:0;
-    text-align:left;
-}
-
-.texto-card h3{
-    color:#fff;
-    margin:0;
-    font-size:22px;
-}
-
-.texto-card span{
-    color:#ffb000;
-    font-weight:bold;
-}
-
-.conteudo-item p{
-    color:#fff;
-    margin:10px 0;
-}
 /* ===== CARDÁPIO CATEGORIAS ===== */
 
 .grid-produtos{
