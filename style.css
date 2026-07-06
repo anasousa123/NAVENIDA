@@ -655,3 +655,8 @@ left:0;
 .conteudo-item b{
     color:#ffb000;
 }
+.card-produto{
+    width: 90%;
+    max-width: 350px;
+    margin: 10px auto;
+}
