@@ -309,19 +309,26 @@ iframe {
 
 @media(max-width: 600px){
 
-
-
 .produto{
+    width:420px;
+    height:90px;
+
     background:#222;
-    border-radius:10px;
-    padding:8px;
+    border-radius:12px;
+
     display:flex;
     align-items:center;
-    gap:8px;
-    height:80px;
+    gap:12px;
+
+    padding:10px;
+
     transition:.3s;
+    cursor:pointer;
 }
 
+.produto:hover{
+    transform:translateY(-4px);
+}
 .produto img{
     width:55px;
     height:55px;
@@ -629,12 +636,13 @@ left:0;
 }
 
 @media(max-width:768px){
-
-    .grid-produtos{
-        display:grid;
-        grid-template-columns:repeat(2,1fr);
-        gap:10px;
-    }
+.grid-produtos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(420px, 420px));
+    justify-content:center;
+    gap:18px;
+    margin-top:20px;
+}
 
     .titulo-item{
     padding:8px;
