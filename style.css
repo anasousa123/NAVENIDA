@@ -191,30 +191,27 @@ GRID DOS PRODUTOS
 
 .grid-produtos{
     display:grid;
-    grid-template-columns:repeat(2,minmax(320px,1fr));
-    gap:18px;
-    justify-content:center;
+    grid-template-columns:repeat(2, minmax(280px,1fr));
+    gap:15px;
     align-items:start;
 }
-
 /*==================================
 CARD
 ==================================*/
 
 .item-cardapio{
-
-    background:#1f1f1f;
-
-    border-radius:15px;
-
-    overflow:hidden;
-
+    background:#1d1d1d;
     border:1px solid #2f2f2f;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+}
 
-    transition:.35s;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.25);
-
+.item-cardapio:hover{
+    transform:translateY(-5px);
+    border-color:#ffb000;
+    box-shadow:0 8px 20px rgba(255,176,0,.25);
 }
 
 .item-cardapio:hover{
@@ -232,25 +229,15 @@ BOTÃO DO CARD
 ==================================*/
 
 .titulo-item{
-
     width:100%;
-
-    background:#222;
-
-    border:none;
-
-    cursor:pointer;
-
     display:flex;
-
     align-items:center;
-
-    gap:15px;
-
-    padding:12px;
-
+    gap:12px;
+    padding:10px 12px;
+    background:#202020;
+    border:none;
+    cursor:pointer;
     text-align:left;
-
 }
 
 /*==================================
@@ -258,51 +245,31 @@ FOTO
 ==================================*/
 
 .foto-card{
-
-    width:80px;
-
-    height:80px;
-
+    width:75px;
+    height:75px;
     border-radius:12px;
-
     object-fit:cover;
-
     flex-shrink:0;
-
 }
-
 /*==================================
 TEXTO
 ==================================*/
 
 .texto-card{
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
+    flex:1;
 }
 
 .texto-card h3{
-
     color:#fff;
-
-    font-size:20px;
-
-    margin-bottom:5px;
-
+    font-size:17px;
+    margin-bottom:6px;
+    line-height:22px;
 }
 
 .texto-card span{
-
     color:#ffb000;
-
-    font-size:17px;
-
-    font-weight:bold;
-
+    font-size:19px;
+    font-weight:700;
 }
 
 /*==================================
@@ -310,39 +277,26 @@ ITENS AO ABRIR
 ==================================*/
 
 .conteudo-item{
-
     display:none;
-
     background:#181818;
-
-    padding:15px;
-
+    padding:10px 15px;
 }
 
 .conteudo-item.ativo{
-
     display:block;
-
 }
+
 
 /*==================================
 LINHAS
 ==================================*/
 
 .linha-item{
-
     display:flex;
-
     align-items:center;
-
-    justify-content:space-between;
-
-    gap:15px;
-
-    padding:12px 0;
-
-    border-bottom:1px solid #333;
-
+    gap:12px;
+    padding:10px 0;
+    border-bottom:1px solid #303030;
 }
 
 .linha-item:last-child{
@@ -356,55 +310,34 @@ FOTO PEQUENA
 ==================================*/
 
 .foto-item{
-
-    width:60px;
-
-    height:60px;
-
+    width:55px;
+    height:55px;
     border-radius:10px;
-
     object-fit:cover;
-
 }
-
 /*==================================
 TEXTO ITEM
 ==================================*/
 
 .texto-item{
-
     flex:1;
-
-    text-align:left;
-
 }
 
 .texto-item h4{
-
+    font-size:15px;
     color:#fff;
-
-    font-size:16px;
-
-    margin-bottom:4px;
-
+    margin-bottom:3px;
 }
 
 .texto-item p{
-
-    color:#bbb;
-
-    font-size:13px;
-
+    font-size:12px;
+    color:#aaa;
 }
 
 .valor-item{
-
     color:#ffb000;
-
     font-size:18px;
-
     font-weight:bold;
-
 }
 
 /*==================================
@@ -666,11 +599,7 @@ CELULAR
 @media(max-width:768px){
 
 .grid-produtos{
-
-grid-template-columns:repeat(2,1fr);
-
-gap:10px;
-
+    grid-template-columns:1fr;
 }
 
 .foto-card{
