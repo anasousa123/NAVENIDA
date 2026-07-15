@@ -184,57 +184,40 @@ CARD
     align-items:center;
 
     background:#1d1d1d;
-    border-radius:18px;
+    border-radius:15px;
     overflow:hidden;
 
     border:1px solid #303030;
 
-    transition:.3s;
-    cursor:pointer;
-
-    height:170px;
+    height:130px;   /* era 170px */
 }
 .produto:hover{
     transform:translateY(-5px);
     border-color:#ffb000;
 }
 
-.produto img{
-    width:170px;
-    height:170px;
 
-    object-fit:cover;
-    flex-shrink:0;
-}
-/*==================================
+/*=================================
 IMAGEM
 ==================================*/
 
 .produto img{
-    width:170px;
-    height:170px;
-
+    width:130px;
+    height:130px;
     object-fit:cover;
-    flex-shrink:0;
-}
+} 
+
 /*==================================
 INFORMAÇÕES
 ==================================*/
 
 .info{
     flex:1;
-
-    padding:22px;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+    padding:15px;
 }
-
 .info h3{
-    color:#fff;
-    font-size:24px;
-    margin-bottom:12px;
+    font-size:22px;
+    margin-bottom:8px;
 }
 .info small{
     color:#999;
@@ -242,17 +225,9 @@ INFORMAÇÕES
 }
 
 .preco{
-
-    display:none;
-
-    color:#ffb000;
-
-    font-size:32px;
-
+    font-size:28px;
     font-weight:bold;
-
-    margin-top:8px;
-
+    color:#ffb000;
 }
 .preco::before{
     content:"A partir de ";
