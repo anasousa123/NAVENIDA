@@ -1,815 +1,108 @@
-/* =====================================================
-   NAVENIDA - STYLE.CSS
-   ===================================================== */
+/* ===== GERAL ===== */
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    background:#121212;
-    color:#fff;
-    font-family:'Montserrat',sans-serif;
+background:#121212;
+color:#fff;
+font-family:Arial, Helvetica, sans-serif;
 }
 
-/*==============================
-TOPO
-===============================*/
+/* ===== TÍTULOS ===== */
 
-.topo-info{
-    background:#0d0d0d;
-    border-bottom:2px solid #ffb000;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:35px;
-    padding:14px;
-    flex-wrap:wrap;
+h2{
+color:#ffb300;
+margin:20px 15px 10px;
+font-size:28px;
 }
-
-.item-topo{
-    color:#ddd;
-    font-size:14px;
-    font-weight:600;
-}
-
-/*==============================
-CONTAINER
-===============================*/
-
-.container{
-    display:flex;
-    width:100%;
-    max-width:1600px;
-    margin:auto;
-}
-
-/*==============================
-MENU LATERAL
-===============================*/
-
-.sidebar{
-
-    width:260px;
-    min-width:260px;
-
-    background:#181818;
-
-    padding:25px;
-
-    position:sticky;
-
-    top:0;
-
-    height:100vh;
-
-    border-right:1px solid #2d2d2d;
-
-}
-
-.logo-lateral{
-
-    width:130px;
-    height:130px;
-
-    border-radius:50%;
-
-    object-fit:cover;
-
-    display:block;
-
-    margin:auto;
-
-    margin-bottom:25px;
-
-    border:2px solid #ffb000;
-
-    box-shadow:0 0 20px rgba(255,176,0,.2);
-
-}
-
-.sidebar nav{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:12px;
-
-}
-
-.sidebar a{
-
-    text-decoration:none;
-
-    color:#fff;
-
-    background:#202020;
-
-    padding:14px;
-
-    border-radius:12px;
-
-    transition:.3s;
-
-    font-weight:600;
-
-}
-
-.sidebar a:hover{
-
-    background:#ffb000;
-
-    color:#000;
-
-    transform:translateX(4px);
-
-}
-
-/*==============================
-CONTEÚDO
-===============================*/
-
-.conteudo{
-
-    flex:1;
-
-    padding:35px;
-
-}
-
-header h1{
-
-    color:#ffb000;
-
-    font-size:36px;
-
-    margin-bottom:5px;
-
-}
-
-header p{
-
-    color:#999;
-
-    margin-bottom:30px;
-
-}
-
-/*==============================
-CATEGORIAS
-===============================*/
 
 .categoria{
-
-    margin-bottom:45px;
-
+color:#ffb300;
+font-size:22px;
+font-weight:bold;
+margin:20px 15px 10px;
 }
 
-.categoria h2{
+/* ===== LISTA ===== */
 
-    color:#ffb000;
-
-    font-size:34px;
-
-    margin-bottom:20px;
-
-    border-left:5px solid #ffb000;
-
-    padding-left:15px;
-
-}
-/*==================================
-GRID DOS PRODUTOS
-==================================*/
-
-.grid-produtos{
-    display:grid;
-    grid-template-columns:repeat(2, minmax(280px,1fr));
-    gap:15px;
-    align-items:start;
-}
-/*==================================
-CARD
-==================================*/
-
-.item-cardapio{
-    background:#1d1d1d;
-    border:1px solid #2f2f2f;
-    border-radius:15px;
-    overflow:hidden;
-    transition:.3s;
-    box-shadow:0 5px 15px rgba(0,0,0,.25);
-}
-
-.item-cardapio:hover{
-    transform:translateY(-5px);
-    border-color:#ffb000;
-    box-shadow:0 8px 20px rgba(255,176,0,.25);
-}
-
-.item-cardapio:hover{
-
-    transform:translateY(-6px);
-
-    border-color:#ffb000;
-
-    box-shadow:0 15px 30px rgba(0,0,0,.45);
-
-}
-
-/*==================================
-BOTÃO DO CARD
-==================================*/
-
-.titulo-item{
-    width:100%;
-    display:flex;
-    align-items:center;
-    gap:12px;
-    padding:10px 12px;
-    background:#202020;
-    border:none;
-    cursor:pointer;
-    text-align:left;
-}
-
-/*==================================
-FOTO
-==================================*/
-
-.foto-card{
-    width:75px;
-    height:75px;
-    border-radius:12px;
-    object-fit:cover;
-    flex-shrink:0;
-}
-/*==================================
-TEXTO
-==================================*/
-
-.texto-card{
-    flex:1;
-}
-
-.texto-card h3{
-    color:#fff;
-    font-size:17px;
-    margin-bottom:6px;
-    line-height:22px;
-}
-
-.texto-card span{
-    color:#ffb000;
-    font-size:19px;
-    font-weight:700;
-}
-
-/*==================================
-ITENS AO ABRIR
-==================================*/
-
-.conteudo-item{
-    display:none;
-    background:#181818;
-    padding:10px 15px;
-}
-
-.conteudo-item.ativo{
-    display:block;
-}
-
-
-/*==================================
-LINHAS
-==================================*/
-
-.linha-item{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    padding:10px 0;
-    border-bottom:1px solid #303030;
-}
-
-.linha-item:last-child{
-
-    border:none;
-
-}
-
-/*==================================
-FOTO PEQUENA
-==================================*/
-
-.foto-item{
-    width:55px;
-    height:55px;
-    border-radius:10px;
-    object-fit:cover;
-}
-/*==================================
-TEXTO ITEM
-==================================*/
-
-.texto-item{
-    flex:1;
-}
-
-.texto-item h4{
-    font-size:15px;
-    color:#fff;
-    margin-bottom:3px;
-}
-
-.texto-item p{
-    font-size:12px;
-    color:#aaa;
-}
-
-.valor-item{
-    color:#ffb000;
-    font-size:18px;
-    font-weight:bold;
-}
-
-/*==================================
-MODAL
-==================================*/
-
-.modal{
-
-    display:none;
-
-    position:fixed;
-
-    inset:0;
-
-    background:rgba(0,0,0,.8);
-
-    z-index:999;
-
-}
-
-.modal-content{
-
-    background:#fff;
-
-    width:90%;
-
-    max-width:650px;
-
-    margin:35px auto;
-
-    border-radius:20px;
-
-    overflow:hidden;
-
-    position:relative;
-
-}
-
-.modal-content img{
-
-    width:100%;
-
-    height:350px;
-
-    object-fit:cover;
-
-}
-
-.modal-content h2{
-
-    color:#222;
-
-    padding:20px 20px 10px;
-
-}
-
-.modal-content p{
-
-    color:#666;
-
-    padding:0 20px;
-
-}
-
-#modal-preco{
-
-    color:#ffb000;
-
-    font-size:28px;
-
-    font-weight:bold;
-
-    padding:20px;
-
-}
-
-.fechar{
-
-    position:absolute;
-
-    right:18px;
-
-    top:10px;
-
-    font-size:36px;
-
-    color:#fff;
-
-    cursor:pointer;
-
-}
-
-/*==================================
-BOTÃO VOLTAR
-==================================*/
-
-.btn-voltar{
-
-    display:inline-block;
-
-    margin-top:35px;
-
-    background:#ffb000;
-
-    color:#000;
-
-    text-decoration:none;
-
-    padding:15px 35px;
-
-    border-radius:12px;
-
-    font-weight:bold;
-
-    transition:.3s;
-
-}
-
-.btn-voltar:hover{
-
-    transform:translateY(-3px);
-
-}
-/*====================================
-RODAPÉ
-====================================*/
-
-footer,
-.rodape{
-
-    width:100%;
-
-    text-align:center;
-
-    padding:35px 20px;
-
-    margin-top:50px;
-
-    color:#bdbdbd;
-
-    background:#181818;
-
-    border-top:1px solid #333;
-
-}
-
-.rodape h3{
-
-    color:#ffb000;
-
-    margin-bottom:10px;
-
-}
-
-/*====================================
-BOTÃO MENU MOBILE
-====================================*/
-
-.menu-mobile{
-
-    display:none;
-
-    position:fixed;
-
-    top:15px;
-
-    left:15px;
-
-    width:55px;
-
-    height:55px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:#ffb000;
-
-    color:#000;
-
-    font-size:28px;
-
-    cursor:pointer;
-
-    z-index:5000;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.4);
-
-}
-
-/*====================================
-RESPONSIVO TABLET
-====================================*/
-
-@media(max-width:900px){
-
-.sidebar{
-
-position:fixed;
-
-left:-280px;
-
-top:0;
-
-height:100vh;
-
-z-index:3000;
-
-transition:.4s;
-
-}
-
-.sidebar.ativo{
-
-left:0;
-
-}
-
-.menu-mobile{
-
+.produtos{
 display:flex;
-
-justify-content:center;
-
-align-items:center;
-
+flex-direction:column;
+gap:12px;
+padding:15px;
 }
 
-.container{
+/* ===== CARD ===== */
 
-display:block;
-
-}
-
-.conteudo{
-
-padding-top:90px;
-
-padding-left:15px;
-
-padding-right:15px;
-
-}
-
-.logo-lateral{
-
-width:110px;
-
-height:110px;
-
-}
-
-}
-
-/*====================================
-CELULAR
-====================================*/
-
-@media(max-width:768px){
-
-.grid-produtos{
-    grid-template-columns:1fr;
-}
-
-.foto-card{
-
-width:60px;
-
-height:60px;
-
-}
-
-.texto-card h3{
-
-font-size:15px;
-
-}
-
-.texto-card span{
-
-font-size:13px;
-
-}
-
-.titulo-item{
-
-padding:10px;
-
-gap:10px;
-
-}
-
-.conteudo-item{
-
-padding:10px;
-
-}
-
-.foto-item{
-
-width:45px;
-
-height:45px;
-
-}
-
-.texto-item h4{
-
-font-size:13px;
-
-}
-
-.texto-item p{
-
-font-size:11px;
-
-}
-
-.valor-item{
-
-font-size:13px;
-
-}
-
-}
-
-/*====================================
-CELULARES PEQUENOS
-====================================*/
-
-@media(max-width:430px){
-
-.grid-produtos{
-
-grid-template-columns:repeat(2,1fr);
-
-gap:8px;
-
-}
-
-.foto-card{
-
-width:52px;
-
-height:52px;
-
-}
-
-.texto-card h3{
-
-font-size:13px;
-
-}
-
-.texto-card span{
-
-font-size:12px;
-
-}
-
-.titulo-item{
-
-padding:8px;
-
-gap:8px;
-
-}
-
-}
-
-/*====================================
-ANIMAÇÕES
-====================================*/
-
-html{
-
-scroll-behavior:smooth;
-
-}
-
-.item-cardapio{
-
-animation:aparecer .4s ease;
-
-}
-
-@keyframes aparecer{
-
-from{
-
-opacity:0;
-
-transform:translateY(20px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-}
-
-/*====================================
-SCROLL
-====================================*/
-
-::-webkit-scrollbar{
-
-width:10px;
-
-}
-
-::-webkit-scrollbar-track{
-
-background:#181818;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-background:#ffb000;
-
-border-radius:20px;
-
-}
-
-/*====================================
-SELEÇÃO
-====================================*/
-
-::selection{
-
-background:#ffb000;
-
-color:#000;
-
-}
 .card{
-    display: flex;
-    align-items: center;
-    background: #1b1b1b;
-    border-radius: 12px;
-    padding: 10px;
-    margin-bottom: 12px;
-    gap: 12px;
+display:flex;
+align-items:center;
+gap:15px;
+background:#1f1f1f;
+border-radius:12px;
+padding:12px;
+width:100%;
+transition:.2s;
 }
+
+.card:hover{
+background:#292929;
+}
+
+/* ===== FOTO ===== */
 
 .card img{
-    width: 90px;
-    height: 90px;
-    border-radius: 10px;
-    object-fit: cover;
-    flex-shrink: 0;
+width:95px;
+height:95px;
+border-radius:10px;
+object-fit:cover;
+flex-shrink:0;
 }
 
+/* ===== INFORMAÇÕES ===== */
+
 .info{
-    flex: 1;
+display:flex;
+flex-direction:column;
+justify-content:center;
+flex:1;
 }
 
 .info h3{
-    color: #fff;
-    font-size: 16px;
-    margin: 0 0 8px;
+color:#fff;
+font-size:18px;
+margin-bottom:8px;
 }
 
 .preco{
-    color: #ffb300;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0;
+color:#ffb300;
+font-size:20px;
+font-weight:bold;
+}
+
+/* ===== CELULAR ===== */
+
+@media(max-width:480px){
+
+.card{
+padding:10px;
+}
+
+.card img{
+width:85px;
+height:85px;
+}
+
+.info h3{
+font-size:16px;
+}
+
+.preco{
+font-size:18px;
+}
+
 }
