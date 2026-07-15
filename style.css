@@ -187,56 +187,82 @@ CARD
 ==================================*/
 
 .produto{
+
     display:flex;
     align-items:center;
 
-    height:130px;
+    gap:15px;
 
-    background:#1d1d1d;
+    width:100%;
 
-    border:2px solid #353535;
+    min-height:120px;
 
-    border-radius:16px;
+    background:#1a1a1a;
+
+    border:2px solid #ffb000;
+
+    border-radius:18px;
+
+    padding:12px;
+
+    transition:.35s;
 
     overflow:hidden;
 
-    transition:.3s;
-
-    cursor:pointer;
 }
 
 .produto:hover{
 
-    border-color:#ffb000;
+    transform:translateY(-5px);
 
-    transform:translateY(-4px);
+    border-color:#ffd54f;
 
-    box-shadow:0 0 18px rgba(255,176,0,.35);
+    box-shadow:0 12px 30px rgba(255,176,0,.25);
 
 }
-
 
 /*=================================
 IMAGEM
 ==================================*/
 
 .produto img{
-    width:130px;
-    height:130px;
-    object-fit:cover;
-} 
 
+    width:95px;
+
+    height:95px;
+
+    object-fit:cover;
+
+    border-radius:14px;
+
+    flex-shrink:0;
+
+}
 /*==================================
 INFORMAÇÕES
 ==================================*/
 
 .info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
     flex:1;
-    padding:15px;
+
 }
 .info h3{
-    font-size:22px;
-    margin-bottom:8px;
+
+    color:#fff;
+
+    font-size:18px;
+
+    margin-bottom:10px;
+
+    line-height:1.3;
+
 }
 .info small{
     color:#999;
@@ -244,9 +270,13 @@ INFORMAÇÕES
 }
 
 .preco{
-    font-size:28px;
-    font-weight:bold;
+
     color:#ffb000;
+
+    font-size:22px;
+
+    font-weight:700;
+
 }
 .preco::before{
     content:"A partir de ";
