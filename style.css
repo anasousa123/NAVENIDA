@@ -56,17 +56,19 @@ MENU
 ==================================*/
 
 .sidebar{
+    position:fixed;
+    top:41px;
+    left:0;
+
     width:250px;
+    height:calc(100vh - 41px);
+
+    overflow-y:auto;
+
     background:#181818;
     border-right:1px solid #2d2d2d;
 
-    position:fixed;
-    top:40px;       /* abaixo da barra superior */
-    left:0;
-    bottom:0;
-
-    overflow-y:auto;
-    padding:25px 20px;
+    padding:20px;
 }
 
 .logo-lateral{
@@ -169,10 +171,15 @@ GRID DOS PRODUTOS
 ==================================*/
 
 .grid-produtos{
+
     display:grid;
+
     grid-template-columns:repeat(2,1fr);
-    gap:20px;
-    margin-top:20px;
+
+    gap:18px;
+
+    align-items:start;
+
 }
 
 /*==================================
@@ -180,17 +187,17 @@ CARD
 ==================================*/
 
 .produto{
-    display:flex;
-    align-items:center;
 
-    background:#1d1d1d;
-    border-radius:15px;
+    display:flex;
+
+    height:130px;
+
     overflow:hidden;
 
-    border:1px solid #303030;
+    border-radius:15px;
 
-    height:130px;   /* era 170px */
 }
+
 .produto:hover{
     transform:translateY(-5px);
     border-color:#ffb000;
