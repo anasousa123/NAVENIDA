@@ -78,3 +78,22 @@ document.querySelectorAll(".titulo-item").forEach(botao => {
 
     });
 });
+document.querySelectorAll(".produto").forEach(card=>{
+
+    card.addEventListener("click",()=>{
+
+        let preco=card.querySelector(".preco");
+
+        if(preco.style.display=="block"){
+
+            preco.style.display="none";
+
+        }else{
+
+            preco.style.display="block";
+
+        }
+
+    });
+
+});
