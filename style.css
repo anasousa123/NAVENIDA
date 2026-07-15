@@ -187,20 +187,32 @@ CARD
 ==================================*/
 
 .produto{
-
     display:flex;
+    align-items:center;
 
     height:130px;
 
+    background:#1d1d1d;
+
+    border:2px solid #353535;
+
+    border-radius:16px;
+
     overflow:hidden;
 
-    border-radius:15px;
+    transition:.3s;
 
+    cursor:pointer;
 }
 
 .produto:hover{
-    transform:translateY(-5px);
+
     border-color:#ffb000;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 0 18px rgba(255,176,0,.35);
+
 }
 
 
