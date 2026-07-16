@@ -118,49 +118,93 @@ body{
 
 
 .grid-produtos{
+
     display:grid;
+
     grid-template-columns:repeat(2,1fr);
+
     gap:15px;
-    align-items:start;
+
 }
 
-.produto,
-.item-cardapio{
-    width:100%;
-}
-    .logo-lateral{
-    box-shadow:0 0 15px rgba(255,176,0,.35);
+.produto{
+
+    background:#222;
+
+    border:1.5px solid #d89a00;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:12px;
+
+    min-height:120px;
+
+    transition:.3s;
+
 }
 
-.produto img,
-.foto-card{
-    width:80px;
-    height:80px;
+.produto:hover{
+
+    transform:translateY(-3px);
+
+    border-color:#ffb000;
+
+}
+
+.produto img{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:12px;
+
     object-fit:cover;
-    border-radius:10px;
+
     flex-shrink:0;
+
 }
 
 .info{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    height:100%;
+
     flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
 }
 
 .info h3{
-    font-size:18px;
-    font-weight:700;
+
     color:#fff;
+
+    font-size:20px;
+
     margin-bottom:8px;
+
+    line-height:1.2;
+
 }
 
 .preco{
+
     color:#ffb000;
-    font-size:24px;
-    font-weight:700;
+
+    font-size:18px;
+
+    font-weight:bold;
+
 }
+
 .info,
 .texto-card{
     display:flex;
@@ -221,6 +265,44 @@ RESPONSIVO CELULAR
 ==========================*/
 
 @media (max-width:900px){
+.grid-produtos{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:10px;
+
+}
+
+.produto{
+
+    min-height:95px;
+
+    padding:8px;
+
+    gap:8px;
+
+}
+
+.produto img{
+
+    width:70px;
+
+    height:70px;
+
+}
+
+.info h3{
+
+    font-size:14px;
+
+}
+
+.preco{
+
+    font-size:13px;
+
+}
+
 
     .container{
         display:flex;
@@ -260,35 +342,7 @@ RESPONSIVO CELULAR
         padding:12px;
     }
 
-.grid-produtos{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:15px;
-    align-items:start;
-}
 
-.produto,
-.item-cardapio{
-    width:100%;
-}
-
-    .produto img,
-.foto-card{
-    width:80px;
-    height:80px;
-    object-fit:cover;
-    border-radius:10px;
-    flex-shrink:0;
-}
-
-    .info h3{
-        font-size:13px;
-        line-height:16px;
-    }
-
-    .preco{
-        font-size:16px;
-    }
 
 .conteudo-item{
     display:none;
@@ -325,7 +379,7 @@ RESPONSIVO CELULAR
 }
 .foto-card{
     width:85px;
-    height:85px;
+   height:85px;
 
     object-fit:cover;
 
