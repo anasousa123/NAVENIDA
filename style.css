@@ -175,26 +175,80 @@ body{
     transform:scale(1.05);
 }
 
-/* ===== RESPONSIVO ===== */
+/*=========================
+RESPONSIVO CELULAR
+==========================*/
 
-@media(max-width:900px){
+@media (max-width:900px){
 
     .container{
-        flex-direction:column;
+        display:flex;
+        flex-direction:row;
     }
 
     .sidebar{
-        width:100%;
-        height:auto;
-        position:relative;
+        width:95px;
+        min-width:95px;
+        position:sticky;
+        top:0;
+        height:100vh;
+        padding:10px;
+        overflow-y:auto;
+    }
+
+    .logo-lateral{
+        width:70px;
+        margin-bottom:15px;
+    }
+
+    .sidebar a{
+        font-size:11px;
+        padding:8px 5px;
+        text-align:center;
+    }
+
+    .conteudo{
+        flex:1;
+        padding:12px;
     }
 
     .grid-produtos{
-        grid-template-columns:1fr;
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:8px;
     }
 
-    .banner img{
-        height:220px;
+    .produto{
+        display:flex;
+        align-items:center;
+        padding:6px;
+        gap:8px;
+        min-height:95px;
     }
 
+    .produto img{
+        width:65px;
+        height:65px;
+        object-fit:cover;
+        border-radius:8px;
+        flex-shrink:0;
+    }
+
+    .info h3{
+        font-size:13px;
+        line-height:16px;
+    }
+
+    .preco{
+        font-size:16px;
+    }
+
+}.conteudo-item{
+    display:none;
+    padding:15px;
+    background:#1c1c1c;
+}
+
+.item-cardapio.ativo .conteudo-item{
+    display:block;
 }
